@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Control Escolar</title>
+</head>
+<body>
+    <h2 style>Sistema de Control Escolar</h2>
+    <h3>Menú Principal</h3>   
+    <br>
+    <br>
+    <div class="biblioteca"> 
+        
+         <div class="control">
+            <button onmouseover="cambiarColor(event, 'rgba(0, 0, 255, 0.3)');" onmouseout="restaurarColor(event)">Gestión de Alumnos</button>
+            <img src="img/student.jpg" alt="logo de persona">
+         </div>
+    </div>
+   
+    <div class="biblioteca">
+        <div class="control">
+            <button onmouseover="cambiarColor(event,'rgba(550, 10, 250, 0.3)');" onmouseout="restaurarColor(event)">Gestión de Docentes</button>
+            <img src="img/teacher.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="biblioteca">
+        <div class="control">
+            <button onmouseover="cambiarColor(event,'rgba(0, 255, 0, 0.3)');" onmouseout="restaurarColor(event)">Calificaciones</button>
+            <img src="img/qualifications.jpg" alt="logo de calificaciones">
+        </div>
+    </div>
+    
+    <div class="biblioteca">
+        <div class="control"> 
+            <button onmouseover=" cambiarColor(event,'rgba(0, 255, 255, 0.5)');" onmouseout="restaurarColor(event)">cursos</button>
+            <img src="img/course.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="biblioteca">
+        <div class="control">
+            <button onmouseover=" cambiarColor(event,'rgba(255, 165, 0, 0.6)');"onmouseout="restaurarColor(event)">grupos</button>
+            <img src="img/group.jpg" alt="">
+        </div>
+    </div>   
+    
+    <script type="text/javascript">
+
+        function cambiarColor(event, color){
+        const control = event.target.parentNode; 
+        control.dataset.originalColor=control.style.background;
+        control.style.background = color;                           
+        }
+
+        function restaurarColor(event){
+        const control=event.target.parentNode;
+        control.style.background = control.dataset.originalColor;
+        }
+        
+
+    </script>
+</body>
+</html>

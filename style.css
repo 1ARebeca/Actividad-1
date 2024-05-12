@@ -1,0 +1,47 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(163, 171, 245, 0.6);
+    transition:0.5s;
+
+}
+
+h2{
+  text-align: center;
+  font-size:40pt;
+  font-weight: 700;
+  background: rgb(96, 213, 248);
+}
+
+h3{
+  text-align: center;
+  font-size:19pt;
+  font-weight: 700;
+  background: rgb(221, 224, 241);
+}
+
+.biblioteca{
+  display: inline-block;
+  border: 80px transparent hsl(0, 9%, 64%);
+  margin:5px;
+}
+
+.biblioteca:hover{
+  border:1px solid hsl(0, 48%, 94%);
+}
+
+.biblioteca .control{
+  padding: 50px;
+  text-align: center;
+}
+
+.biblioteca img{
+  width: auto;
+  height: 100px;
+}
+
+.biblioteca button{
+  display: block;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(116, 186, 252);
+}
